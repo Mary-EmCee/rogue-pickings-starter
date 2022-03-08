@@ -39,30 +39,31 @@ h3 {
 
 p {
 	font-size: .875em;
-	line-height: 21px;
-    padding: 0 30px;
+	line-height: 1.312em;
 }
 
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	padding: 5% 0;
 }
 
 header h1 {
-	margin: 0;
-	padding: 2% 0;
+	text-align: center;
+	padding: 4% 0;
+	border-bottom: #77a466 3px solid;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 0;
 }
 header nav ul {
 	margin: 0;
@@ -70,9 +71,10 @@ header nav ul {
 }
 header nav ul li {
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 3% 10px;
+	padding: 15% 0;
 	list-style: none;
 }
 header nav ul li a{
@@ -83,12 +85,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	width: 100%;
 }
 
 .main-image {
@@ -116,22 +115,15 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	height: auto;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
+.section-one h3,
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0;
+	text-align: left;
 }
 
 .menu {
@@ -146,12 +138,12 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: 1.312em;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 24px;
+	line-height: 1.5em;
 }
 
 /*The widths are in a percentage!*/
@@ -163,6 +155,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
