@@ -50,6 +50,7 @@ header {
 	align-items: center;
 	flex-flow: row wrap;
 	padding: 5% 0;
+	width: 100%;
 }
 
 header h1 {
@@ -65,10 +66,7 @@ header h1 span {
 header nav {
 	padding: 0;
 }
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
+
 header nav ul li {
 	text-transform: uppercase;
 	text-align: center;
@@ -82,9 +80,8 @@ header nav ul li a{
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
+
+.top-section {
 	display: flex;
 	align-items: center;
 	flex-flow: row wrap;
@@ -146,7 +143,7 @@ header nav ul li a{
 	line-height: 1.5em;
 }
 
-/*The widths are in a percentage!*/
+
 footer {
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -162,4 +159,63 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/****** TABLET STYLES ******/
+@media all and (min-width:768px) {
+	.bottom-section {
+		display: flex;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: 16em;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	.section-two h3, .section-three h3 {
+		padding: 0 5%;
+	}
+	.section-two p, .section-three p {
+		padding: 0 5%;
+	}
+
+}
+
+/****** DESKTOP STYLES ******/
+@media all and (min-width:1200px) {
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		border-bottom: none;
+		width: 33%;
+		padding: 0 1%;
+		text-align: left;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	header nav ul li {
+		padding: 0 4%;
+	}
+
+	
+
 }
